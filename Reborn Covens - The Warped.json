@@ -1,0 +1,593 @@
+{
+  "catalogue": {
+    "name": "Reborn Covens - The Warped",
+    "id": "6e1a-10e3-6683-191f",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "sys-774c-62f8-fa42-34ab",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Exemplar",
+        "id": "a840-d70c-53b0-85fd",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "7900-3a65-954-6e62", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "8b42-e587-42a2-26d8", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Exemplar",
+            "id": "46aa-4bc7-e5f0-a838",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Protector",
+            "id": "2712-e284-436-4a4e",
+            "description": "At the end of the unit's Turn, choose one Ally you can see. All Enemies touching that unit are Exhausted.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Visionary",
+        "id": "9690-914e-f7cb-da43",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "8ff9-4931-1ec3-5c0a", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [
+          {"name": "Gear", "id": "9349-bed1-b1e8-6715", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"},
+          {
+            "name": "Cloak",
+            "id": "c9a-e0fe-1940-7e10",
+            "hidden": false,
+            "import": true,
+            "targetId": "a65e-4d40-c9a9-fae7",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "8173-be77-2757-5544", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "c587-c490-3d6e-ec23", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Visionary",
+            "id": "a1aa-1c77-611b-f0a1",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Unveil",
+            "id": "47a1-7e2c-b639-234d",
+            "description": "At the end of the unit's Turn, swap the positions of any two Allies you can see.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Host",
+        "id": "5747-dd66-8af-e0c5",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "f2db-c2a5-30ad-e1a5", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "770a-4c18-bb8c-338", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Host",
+            "id": "12c2-1f3a-ed6d-dd85",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Onslaught",
+            "id": "35d2-fe2b-7a42-3a3",
+            "description": "At the end of the unit's Turn, any Enemies touching the unit take d6 Damage.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Offspring",
+        "id": "bbee-67cf-3686-2289",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "5f30-6327-f5b0-4f84", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 4}],
+        "entryLinks": [
+          {"name": "Gear", "id": "9593-d3e6-b1c5-a666", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"},
+          {
+            "name": "Savage Claws",
+            "id": "110d-3d3e-d423-cc58",
+            "hidden": false,
+            "import": true,
+            "targetId": "7abd-78b-80e6-f831",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "f47d-b796-2699-dbe1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3781-8f6d-bd83-e8e3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Fierce", "id": "974-1a87-c7fe-10f5", "hidden": false, "targetId": "f87a-ab95-7fa5-db49", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Offspring",
+            "id": "6b94-909d-86cd-4551",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Keeper",
+        "id": "6f9f-d8d2-b658-d6d7",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "413e-20da-81b8-f832", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "534b-753b-9b4f-c3f6", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Keeper",
+            "id": "94fd-954-811a-68a",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Revive",
+            "id": "24d2-e829-8b39-5486",
+            "description": "At the end of the unit's Turn, any Allies the unit is touching automatically Recover.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Engineer",
+        "id": "cbc6-d833-5188-cb24",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "b96-6167-1937-2d09", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "df0f-e7e3-30ff-9d5c", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Precise", "id": "e749-ded2-cb72-f4a4", "hidden": false, "targetId": "6672-c04b-b4a5-411d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Engineer",
+            "id": "c458-3af9-b3b0-fd5f",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Informer",
+        "id": "7324-d185-c31e-31fd",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "7061-72f1-4a5f-2614", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "47a7-c539-5641-5a0c", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Nimble", "id": "7188-393b-7ae8-b433", "hidden": false, "targetId": "f6de-6b53-6de0-e4cf", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Informer",
+            "id": "eeb4-60f-4418-f8a0",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Decoy", "id": "745b-c10a-8ed6-9fcb", "description": "Spend an Action to swap places with an Ally the unit can see.", "hidden": false}]
+      },
+      {
+        "name": "Anomaly",
+        "id": "d4ac-2f31-b6d3-eb44",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "5a36-69a9-2bab-f02e", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "8c21-b1ab-3003-1dae", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Anomaly",
+            "id": "92d5-8720-3951-6b16",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Smite",
+            "id": "e0fe-9904-3421-f71",
+            "description": "Once per Turn, as an Action, target an Enemy the unit can see and Roll. If you pass, they take that much Damage. If you fail, you take that much Damage.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Kindred",
+        "id": "2619-856c-a40d-acd4",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "94f7-2fee-a66-abf9", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "d561-f884-a60e-27ab", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Kindred",
+            "id": "7e15-6ae7-f0ac-9977",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Arenaline",
+            "id": "5acd-35d5-aa83-f562",
+            "description": "The unit may perform a Free Action at the end of its Turn. If the unit does, take 1 Damage.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Unborn",
+        "id": "6b0d-ac5f-db02-5577",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "ffe0-9131-dab9-4f2", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "9558-5fd0-c821-562", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Unborn",
+            "id": "51ac-dbbb-118c-85b8",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Impact", "id": "593d-9327-c345-af5c", "description": "Cause 1 Damage to an Enemy when the unit Moves into touch with it.", "hidden": false}]
+      },
+      {
+        "name": "Seer",
+        "id": "27ce-64c2-c790-66bb",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "c93b-9577-865d-9c9b", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "4f68-cde-bbb8-f815", "hidden": false, "import": true, "targetId": "b5d5-d129-b510-f936", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Seer",
+            "id": "ad24-bf70-89e4-4416",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Link",
+            "id": "c6e9-bab0-95ea-128a",
+            "description": "At the end of the unit's Turn, an Ally this unit has Line of Sight to can make a Free Move.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Savage Claws",
+        "id": "7abd-78b-80e6-f831",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Savage Claws",
+            "id": "9525-63c1-b613-7083",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Huge Claws",
+        "id": "baab-f553-bcd0-8b86",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Storm", "id": "6998-7815-2401-325d", "hidden": false, "targetId": "bf6d-af3d-7b05-daac", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Huge Claws",
+            "id": "8bfb-4989-1d2f-2ea4",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Lethal Probe",
+        "id": "df5e-f50a-dbce-341b",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Agony", "id": "89f3-7e14-9ad6-22d2", "hidden": false, "targetId": "18df-7449-c20c-2db7", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Lethal Probe",
+            "id": "d432-a671-ef89-3984",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Storm Cannon",
+        "id": "fa0b-888e-7d43-c6cd",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Storm", "id": "242a-860e-7f95-6b86", "hidden": false, "targetId": "bf6d-af3d-7b05-daac", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Storm Cannon",
+            "id": "552b-55a4-2c1a-87a6",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Novagun",
+        "id": "86c8-238e-f5a-bdb",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "profiles": [
+          {
+            "name": "Novagun",
+            "id": "8721-8fe7-cc63-fe80",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Surge", "id": "3358-bc7b-f492-976f", "description": "x2 Damage but the unit takes the Damage for each to hit roll of a 1.", "hidden": false}]
+      },
+      {
+        "name": "Grav Warper",
+        "id": "439-ff66-e71f-bd10",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Force", "id": "db41-d2d8-847e-7262", "hidden": false, "targetId": "32b2-18be-7872-5131", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Grav Warper",
+            "id": "5eaf-cc77-5b31-126c",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Toxic Blade",
+        "id": "5de-fa1b-9173-e37e",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Toxic Blade",
+            "id": "335-5afc-64b-2076",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Ripper Staff",
+        "id": "33ac-6ad2-4f26-9288",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Heavy", "id": "47ca-ad9e-d514-d447", "hidden": false, "targetId": "63b-6162-70d1-394c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Ripper Staff",
+            "id": "bc51-6077-4e67-fe52",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Scatterblaster",
+        "id": "6898-36d5-3078-7a93",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Scatterblaster",
+            "id": "5425-7e51-3532-628b",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Charger",
+        "id": "e786-5fa3-6400-c5a2",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Charger",
+            "id": "d8b0-c06f-8bff-e9f2",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [
+          {"name": "Surge", "id": "6921-9b06-fbe6-4789", "description": "x2 Damage but the Shooting unit takes the Damage for each to hit roll of a 1.", "hidden": false}
+        ]
+      },
+      {
+        "name": "Rumbler",
+        "id": "ab5f-dd98-b4f-de16",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Rumbler",
+            "id": "6a64-d9f-729c-e61a",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Concuss", "id": "d0ef-4e7e-8c5f-703f", "description": "x2 Damage vs Standing targets. Ignore Shock roll results that would kill.", "hidden": false}]
+      },
+      {
+        "name": "Claws",
+        "id": "414f-9cb7-3074-145c",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Claws",
+            "id": "cc1c-6558-7863-5d38",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Toxic Dagger",
+        "id": "18d4-960d-5e83-590a",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Toxic Dagger",
+            "id": "c3ce-524c-2e90-ed08",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Lethal", "id": "3db9-caa7-d448-a734", "description": "Shock Rolls of 7 are treated as a Double.", "hidden": false}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Gear",
+        "id": "b5d5-d129-b510-f936",
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Huge Claws", "id": "970f-8c6e-9f9d-a5b6", "hidden": false, "import": true, "targetId": "baab-f553-bcd0-8b86", "type": "selectionEntry"},
+          {"name": "Lethal Probe", "id": "1fe7-42ae-b7bb-1d64", "hidden": false, "import": true, "targetId": "df5e-f50a-dbce-341b", "type": "selectionEntry"},
+          {"name": "Storm Cannon", "id": "1593-fef3-f6f2-baea", "hidden": false, "import": true, "targetId": "fa0b-888e-7d43-c6cd", "type": "selectionEntry"},
+          {"name": "Novagun", "id": "b5d-4cf4-b35f-9152", "hidden": false, "import": true, "targetId": "86c8-238e-f5a-bdb", "type": "selectionEntry"},
+          {"name": "Grav Warper", "id": "4a3e-c696-92ec-a9b0", "hidden": false, "import": true, "targetId": "439-ff66-e71f-bd10", "type": "selectionEntry"},
+          {"name": "Toxic Blade", "id": "594b-6a11-7069-bceb", "hidden": false, "import": true, "targetId": "5de-fa1b-9173-e37e", "type": "selectionEntry"},
+          {"name": "Savage Claws", "id": "fbdf-5c6e-7e9c-1851", "hidden": false, "import": true, "targetId": "7abd-78b-80e6-f831", "type": "selectionEntry"},
+          {"name": "Ripper Staff", "id": "7e3d-35fd-b609-6f11", "hidden": false, "import": true, "targetId": "33ac-6ad2-4f26-9288", "type": "selectionEntry"},
+          {"name": "Scatterblaster", "id": "c014-2c01-cfd8-3f15", "hidden": false, "import": true, "targetId": "6898-36d5-3078-7a93", "type": "selectionEntry"},
+          {"name": "Charger", "id": "8cec-4ecf-3f62-d348", "hidden": false, "import": true, "targetId": "e786-5fa3-6400-c5a2", "type": "selectionEntry"},
+          {"name": "Rumbler", "id": "1ae0-bf0e-5cc6-9e1", "hidden": false, "import": true, "targetId": "ab5f-dd98-b4f-de16", "type": "selectionEntry"},
+          {"name": "Claws", "id": "5b8d-4167-ddd-c796", "hidden": false, "import": true, "targetId": "414f-9cb7-3074-145c", "type": "selectionEntry"},
+          {"name": "Piercer", "id": "be66-5a7c-bbe0-9848", "hidden": false, "import": true, "targetId": "1211-1401-dc41-a728", "type": "selectionEntry"},
+          {"name": "Blaster", "id": "85fe-2a6f-66c4-74ce", "hidden": false, "import": true, "targetId": "2c56-1597-297-7263", "type": "selectionEntry"},
+          {"name": "Pistol", "id": "c421-b8e5-5ff0-b1ef", "hidden": false, "import": true, "targetId": "4480-dd01-5586-6da7", "type": "selectionEntry"},
+          {"name": "Toxic Dagger", "id": "17cf-a82d-7fb7-d78", "hidden": false, "import": true, "targetId": "18d4-960d-5e83-590a", "type": "selectionEntry"},
+          {"name": "Cloak", "id": "2ac1-c1f7-7be1-af0e", "hidden": false, "import": true, "targetId": "a65e-4d40-c9a9-fae7", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}

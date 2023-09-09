@@ -1,0 +1,519 @@
+{
+  "catalogue": {
+    "name": "Inheritor Courts - The Cursed",
+    "id": "2483-5f53-ba36-f5af",
+    "authorUrl": "https://roster.cards",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "sys-774c-62f8-fa42-34ab",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Sheriff",
+        "id": "6051-c02a-c081-a47b",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "e9a4-4b78-244e-8ab3", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "ca53-aaf5-bf9c-f135", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Precise", "id": "b6ca-e108-b810-fbea", "hidden": false, "targetId": "6672-c04b-b4a5-411d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Sheriff",
+            "id": "240d-d18f-79c-5293",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Execute", "id": "5eab-923f-c555-a87b", "description": "At the end of the unit's Turn, a Downed Enemy it can see takes d6 Damage.", "hidden": false}]
+      },
+      {
+        "name": "Marshall",
+        "id": "df4e-9ca4-2d25-16da",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "b97-8a52-a0af-c23", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "d0c0-c2e7-e5d1-24d1", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fierce", "id": "4f49-8432-b78-578e", "hidden": false, "targetId": "f87a-ab95-7fa5-db49", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Marshall",
+            "id": "1226-71ce-6366-c7d",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {"name": "Advance", "id": "b77a-af34-4ab9-4d60", "description": "At the end of the unit's Turn, all Allies that it can see make a Free Move.", "hidden": false}
+        ]
+      },
+      {
+        "name": "Judge",
+        "id": "9f61-974b-48cd-90d",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "3c3f-b34d-8d0f-dbd0", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "10da-58be-4ac3-6de3", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Tough", "id": "d97e-37ed-d1f6-f6b2", "hidden": false, "targetId": "2b24-88e0-ae4-1b57", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Judge",
+            "id": "5878-5b81-630b-d7d0",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Condemn",
+            "id": "ba11-c3c3-bde9-a85e",
+            "description": "At the end of the unit's Turn, target an Enemy it can see. All Readied Allies can make a Free Attack on the targeted Enemy.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Paragon",
+        "id": "b44b-7c9b-cd56-10e0",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "6323-536e-7df1-f9ce", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 4}],
+        "entryLinks": [{"name": "Gear", "id": "6a9a-f53e-38bb-f5be", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Tough", "id": "8e11-a04d-1345-ad33", "hidden": false, "targetId": "2b24-88e0-ae4-1b57", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Paragon",
+            "id": "a5d0-47c6-d26b-754f",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Guardian", "id": "c172-3871-f04c-7d89", "description": "Attack at QL2+ vs Enemies that are touching an Ally.", "hidden": false}]
+      },
+      {
+        "name": "Pathfinder",
+        "id": "e849-f92b-796d-3c29",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "6600-4ce2-436f-c8e0", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 4}],
+        "entryLinks": [{"name": "Gear", "id": "6e5c-21bb-ce88-f758", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Precise", "id": "1a26-b798-13c9-6e29", "hidden": false, "targetId": "6672-c04b-b4a5-411d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Pathfinder",
+            "id": "1c8c-6c4e-771-3dc9",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Shortcut",
+            "id": "9f8a-75d4-c92f-1d96",
+            "description": "At the end of the unit's Turn, if this unit is touching a board edge it can Move to any other point on that edge without rolling.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Champion",
+        "id": "2641-3f72-56bd-ccb",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "c7d1-e09c-a6-d150", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "23ba-7afc-f00e-f836", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fierce", "id": "32c6-20bd-a89d-c071", "hidden": false, "targetId": "f87a-ab95-7fa5-db49", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Champion",
+            "id": "9d79-509f-c05d-d70a",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Freelance",
+        "id": "5b9d-4e5b-fe90-d625",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "f3a7-8987-c9b8-1519", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "1ea-ee4e-6302-a13e", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Tough", "id": "87aa-3489-2e57-9284", "hidden": false, "targetId": "2b24-88e0-ae4-1b57", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Freelance",
+            "id": "6c21-e553-5fb4-8fff",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Versatile",
+            "id": "8a7-37f7-f7c-1639",
+            "description": "At the end of the unit's Turn, perform a Free Action of a type it has not already performed this Turn.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Chronicle",
+        "id": "5e-fb06-3f47-ca6e",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "3815-2b8d-8c2b-676", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "d33b-24ef-6f2a-bc02", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Chronicle",
+            "id": "e396-4dfd-d8d9-5a1e",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Aide",
+            "id": "6a43-b19f-ba40-9094",
+            "description": "At the end of the unit's Turn, if it can see the warband Leader the Chronicle can perform a Free Move or Recovery Action.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Legionnaire",
+        "id": "a104-7335-b7c8-3ec4",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "efda-a873-ba72-9cab", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "1b18-6d5e-bb86-256e", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Legionnaire",
+            "id": "748-8ba5-ded7-71e2",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Loyal", "id": "1200-9a17-887b-4694", "description": "Shoot as QL3+ when it can see the warband Leader.", "hidden": false}]
+      },
+      {
+        "name": "Zealot",
+        "id": "8d39-2db2-3fcb-6c42",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "46a2-88e6-1e8b-ed80", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "d37c-5abd-3a80-622a", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Zealot",
+            "id": "1cd2-fe7d-3819-50a5",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Fanatic", "id": "6c0c-5bca-1f5d-cdba", "description": "Fight as QL3+ if it can see the warband Leader.", "hidden": false}]
+      },
+      {
+        "name": "Herald",
+        "id": "9fd4-5935-8546-1862",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "d983-a775-2a3a-55c7", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "79ef-ec2-e417-1aca", "hidden": false, "import": true, "targetId": "aa2c-b35d-97c0-21b", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Herald",
+            "id": "ff18-5bf2-2712-78bf",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Inspire",
+            "id": "d23e-d36e-4774-8a0a",
+            "description": "At the end of its Turn, an Ally it can see makes a Free Fight or Recover Action.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Siege Hammer",
+        "id": "aece-dc00-712e-2709",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Heavy", "id": "1fb2-7bc-3ba8-d4f4", "hidden": false, "targetId": "63b-6162-70d1-394c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Siege Hammer",
+            "id": "e58-7b5e-a165-9b7",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Ancestral Blade",
+        "id": "118d-62a2-3ab5-47cb",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Rend", "id": "2042-e682-1315-1769", "hidden": false, "targetId": "6235-c6fb-4eeb-7386", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Ancestral Blade",
+            "id": "4d36-d39b-b7-c033",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Incinerator",
+        "id": "b67c-8c04-2675-620d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "profiles": [
+          {
+            "name": "Incinerator",
+            "id": "be48-5e74-dbaa-6cb3",
+            "hidden": false,
+            "typeId": "1704-ae8f-2573-e9b6",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "844f-b352-b646-76dc"}]
+          }
+        ],
+        "rules": [{"name": "Blaze", "id": "2800-28f3-6950-1001", "description": "The unit can Shoot twice per Turn, but not at the same target.", "hidden": false}]
+      },
+      {
+        "name": "Righteous Fist",
+        "id": "cc0e-91c0-1285-61eb",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Righteous Fist",
+            "id": "8f89-3a7a-b65-1b4a",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Brutal", "id": "c79b-aeb1-8651-e4b7", "description": "Roll 1d6+1 on the Shock Table instead of 2d6.", "hidden": false}]
+      },
+      {
+        "name": "Relic Blade",
+        "id": "6c06-9184-48ef-719e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Relic Blade",
+            "id": "5e22-2b00-ea37-8010",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Flail",
+        "id": "c51c-e066-b9be-40e2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Surge", "id": "366a-4b7a-4cca-9a1f", "hidden": false, "targetId": "d743-bdbb-a49e-1247", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Flail",
+            "id": "8be2-b7f8-846f-5455",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Polearm",
+        "id": "8c22-9ca7-9671-a7a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Heavy", "id": "a98e-7ff5-eb4f-b0a4", "hidden": false, "targetId": "63b-6162-70d1-394c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Polearm",
+            "id": "26d-58f1-8504-339a",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Thundergun",
+        "id": "974b-d958-c3f6-a7b2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Thundergun",
+            "id": "6d97-8554-5784-ae6b",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "R1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Slugger",
+        "id": "9b3e-c1b-9470-6cce",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Sidearm", "id": "733f-2763-4363-4472", "hidden": false, "targetId": "7e73-1650-7b5a-626f", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Slugger",
+            "id": "10a3-35e0-d815-78a8",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "R1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Repeater",
+        "id": "6637-cb25-9b6e-db1b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Storm", "id": "af85-e714-5c6e-8175", "hidden": false, "targetId": "bf6d-af3d-7b05-daac", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Repeater",
+            "id": "35a6-e63b-683f-d4c8",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "R1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Maul",
+        "id": "6d97-175f-9109-6b8d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Maul",
+            "id": "85d4-12a6-2fd3-3490",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Attack",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Gear",
+        "id": "aa2c-b35d-97c0-21b",
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Ancestral Blade", "id": "b5ff-710a-c226-cfaf", "hidden": false, "import": true, "targetId": "118d-62a2-3ab5-47cb", "type": "selectionEntry"},
+          {"name": "Blade", "id": "b6e1-8463-6023-1b55", "hidden": false, "import": true, "targetId": "2b1-b999-d739-5204", "type": "selectionEntry"},
+          {"name": "Blaster", "id": "6419-258b-1f72-168a", "hidden": false, "import": true, "targetId": "2c56-1597-297-7263", "type": "selectionEntry"},
+          {"name": "Flail", "id": "725e-370-13b8-2d5b", "hidden": false, "import": true, "targetId": "c51c-e066-b9be-40e2", "type": "selectionEntry"},
+          {"name": "Maul", "id": "fbfe-4ba2-4e1f-4d2e", "hidden": false, "import": true, "targetId": "6d97-175f-9109-6b8d", "type": "selectionEntry"},
+          {"name": "Piercer", "id": "65b6-14ba-bdd4-aecb", "hidden": false, "import": true, "targetId": "1211-1401-dc41-a728", "type": "selectionEntry"},
+          {"name": "Relic Blade", "id": "4e28-60e3-ac90-40ae", "hidden": false, "import": true, "targetId": "6c06-9184-48ef-719e", "type": "selectionEntry"},
+          {"name": "Repeater", "id": "927-ce40-a6be-4d88", "hidden": false, "import": true, "targetId": "6637-cb25-9b6e-db1b", "type": "selectionEntry"},
+          {"name": "Righteous Fist", "id": "93dc-67a7-29d5-52cc", "hidden": false, "import": true, "targetId": "cc0e-91c0-1285-61eb", "type": "selectionEntry"},
+          {"name": "Shield", "id": "7326-f7ea-6732-5d46", "hidden": false, "import": true, "targetId": "d4ee-9f52-8891-1279", "type": "selectionEntry"},
+          {"name": "Thundergun", "id": "70a5-d6c-76f9-99a2", "hidden": false, "import": true, "targetId": "974b-d958-c3f6-a7b2", "type": "selectionEntry"},
+          {"name": "Siege Hammer", "id": "fb8b-4c92-e902-b5a7", "hidden": false, "import": true, "targetId": "aece-dc00-712e-2709", "type": "selectionEntry"},
+          {"name": "Incinerator", "id": "556d-ba63-e8e4-fadf", "hidden": false, "import": true, "targetId": "b67c-8c04-2675-620d", "type": "selectionEntry"},
+          {"name": "Polearm", "id": "b83-66ac-ae17-deb", "hidden": false, "import": true, "targetId": "8c22-9ca7-9671-a7a", "type": "selectionEntry"},
+          {"name": "Slugger", "id": "1e3e-5242-9988-73bc", "hidden": false, "import": true, "targetId": "9b3e-c1b-9470-6cce", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}
