@@ -1,0 +1,573 @@
+{
+  "catalogue": {
+    "name": "Exile Bands - The Wild",
+    "id": "be3a-dd77-aa7d-c04c",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "sys-774c-62f8-fa42-34ab",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Alpha",
+        "id": "2ea0-6691-21f7-49",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "2f4a-9916-1f09-f905", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "9374-4490-b453-9b76", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Nimble", "id": "b3ef-cb89-8ce8-539c", "hidden": false, "targetId": "f6de-6b53-6de0-e4cf", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Alpha",
+            "id": "d658-de94-559c-79d3",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Rampage", "id": "574d-6fa9-1bfa-d1c6", "description": "At the end of the unit's Turn, it may make a Free Move or Fight.", "hidden": false}]
+      },
+      {
+        "name": "Watcher",
+        "id": "1bfa-2ca8-639d-3cf6",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "6c87-ad28-3dea-77db", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "8a0c-729f-af2a-4ce2", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Precise", "id": "2e1b-283c-9f2e-ef41", "hidden": false, "targetId": "6672-c04b-b4a5-411d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Watcher",
+            "id": "44f1-6711-7e3f-6650",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Blink",
+            "id": "31b6-ac71-350e-5cbc",
+            "description": "At the end of the unit's Turn, Move it to any position that no Enemies can see. The unit is then Exhausted.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Slayer",
+        "id": "b881-8d2a-d2ac-2263",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Leader", "id": "6aee-5cd3-1f22-ee08", "primary": true, "targetId": "default-category"}],
+        "entryLinks": [{"name": "Gear", "id": "e581-535-39f7-b450", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fierce", "id": "ab74-8f6a-5bdd-394d", "hidden": false, "targetId": "f87a-ab95-7fa5-db49", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Slayer",
+            "id": "1046-2d39-39f3-2530",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "3", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Massacre",
+            "id": "f953-e974-4cf6-7682",
+            "description": "At the end of the unit's Turn, any Allies that can see a Downed Enemy make a Free Move or Fight.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Elite",
+        "id": "5bcc-cea7-23b3-422f",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "6718-56d2-a50b-cff3", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 5}],
+        "entryLinks": [
+          {
+            "name": "Shield",
+            "id": "7943-9ab7-2949-7af4",
+            "hidden": false,
+            "import": true,
+            "targetId": "d4ee-9f52-8891-1279",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "84f9-2fb0-ecfc-67ff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e1a0-3498-f7fc-648", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 0}]
+          },
+          {"name": "Gear", "id": "54e0-da62-404e-e2f1", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Nimble", "id": "2b40-adf0-4374-3ac5", "hidden": false, "targetId": "f6de-6b53-6de0-e4cf", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Elite",
+            "id": "4371-3f5e-791-cccb",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Warrior",
+        "id": "9910-c69-8b36-a843",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "74e6-9309-e43f-3f4", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 4}],
+        "entryLinks": [{"name": "Gear", "id": "eec0-c1c4-9ef7-1127", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {"name": "Fierce", "id": "23c9-7088-ce07-350b", "hidden": false, "targetId": "f87a-ab95-7fa5-db49", "type": "rule"},
+          {"name": "Tough", "id": "6085-dfd4-5656-4dd0", "hidden": false, "targetId": "2b24-88e0-ae4-1b57", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Warrior",
+            "id": "69bb-97fd-bbd7-d44e",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Predator",
+        "id": "398f-c287-bbee-c5c9",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "a1c0-3594-263c-8efc", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "fb65-a689-957c-faf5", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Precise", "id": "9bde-83ad-a722-24dd", "hidden": false, "targetId": "6672-c04b-b4a5-411d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Predator",
+            "id": "5840-39d7-af72-85f4",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "4", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Stalker",
+        "id": "558a-b7bf-64eb-7a34",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "f5f4-4df5-b88a-dcb7", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "a51f-20e0-65d-724b", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Nimble", "id": "185-fe4e-22a9-9b4", "hidden": false, "targetId": "f6de-6b53-6de0-e4cf", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Stalker",
+            "id": "58d6-9297-f35-977",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Shortcut",
+            "id": "64a8-8147-b84c-32fa",
+            "description": "At the end of the unit's Turn, if it is touching a board edge it can Move to any other point on that edge without rolling.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Blooded",
+        "id": "df32-5405-cd5f-99fd",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "6c33-e0a6-ca21-bfbd", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "c9a1-d8a-3ae1-2fc6", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Nimble", "id": "27ef-2cac-b2f5-c428", "hidden": false, "targetId": "f6de-6b53-6de0-e4cf", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Blooded",
+            "id": "1b72-1d56-ca52-f75c",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ]
+      },
+      {
+        "name": "Oathbound",
+        "id": "19b7-f4dd-1285-cf36",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "1ef1-7f89-7d6c-ba6f", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "entryLinks": [{"name": "Gear", "id": "6fb2-c742-6867-2a67", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Tough", "id": "8373-47f3-a714-154", "hidden": false, "targetId": "2b24-88e0-ae4-1b57", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oathbound",
+            "id": "6e4c-590b-ca73-bfe",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [{"name": "Defender", "id": "5819-fa97-5906-cf92", "description": "The unit may make Saves at QL3+ if it can see the Warband Leader.", "hidden": false}]
+      },
+      {
+        "name": "Prophet",
+        "id": "472e-8e84-d223-7782",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "786d-3fa1-a48d-51c6", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "e6e1-88a8-a28a-f35e", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Prophet",
+            "id": "a07f-91e5-a52-5385",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Manipulate",
+            "id": "c45c-c0cc-83a0-278a",
+            "description": "At the end of its Turn, Move an Enemy unit it can see but in such a way that they do not directly come to harm.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Spotter",
+        "id": "533-64ec-9f0e-8ea",
+        "hidden": false,
+        "import": false,
+        "type": "model",
+        "categoryLinks": [{"name": "Follower", "id": "e0c6-41a9-7296-b36", "primary": true, "targetId": "daf9-5bd2-ec45-4b91"}],
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "entryLinks": [{"name": "Gear", "id": "b694-62ef-f498-b40", "hidden": false, "import": true, "targetId": "7197-1b0c-7ffa-4878", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Spotter",
+            "id": "1d85-68f7-a0cd-7b60",
+            "hidden": false,
+            "typeId": "f77e-6ad7-bf1e-7733",
+            "typeName": "Model",
+            "characteristics": [{"name": "Quality", "$text": "5", "typeId": "d575-8a65-a82d-6a5f"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Sensor",
+            "id": "dd4f-d9a0-eb8-a92",
+            "description": "At the end of the unit's Turn, a Readied Ally in Line of Sight can make a Free Shoot at an Enemy the Sensor equipped unit can see.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Death Claws",
+        "id": "7f1b-befa-58d8-c2fd",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Lethal", "id": "2ef7-e072-34a-35e0", "hidden": false, "targetId": "b6b9-a2c0-102e-f234", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Death Claws",
+            "id": "314a-b390-ef5b-afc3",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Dread Glaive",
+        "id": "3332-d0e7-379d-48e6",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Storm", "id": "9f72-9c9f-b64-bacc", "hidden": false, "targetId": "bf6d-af3d-7b05-daac", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Dread Glaive",
+            "id": "43b0-1be3-db17-e25b",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Cluster Launcher",
+        "id": "847d-2d30-2f0d-3254",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Concuss", "id": "92a4-30c6-7b8b-96a1", "hidden": false, "targetId": "1553-adbf-94a8-d3e0", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Cluster Launcher",
+            "id": "728b-400c-a77f-c0e3",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Shardreaper",
+        "id": "a4c0-883f-eeb-c164",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Heavy", "id": "46b7-731f-2fb2-ca4e", "hidden": false, "targetId": "63b-6162-70d1-394c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Shardreaper",
+            "id": "b604-6b00-3db9-a9ff",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Seeker Cannon",
+        "id": "4d91-c29d-5ec1-458",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "infoLinks": [{"name": "Storm", "id": "f35f-a67b-2352-3ef8", "hidden": false, "targetId": "bf6d-af3d-7b05-daac", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Seeker Cannon",
+            "id": "f725-2a07-1bbe-80c4",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R1x3", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Fusion Gun",
+        "id": "f4cb-8b18-1bbb-4ba2",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 3}],
+        "profiles": [
+          {
+            "name": "Fusion Gun",
+            "id": "c93c-b8c-1321-55a7",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Bane", "id": "37f8-6c7-ce7e-5ea6", "description": "Target saves as if it had QL5+.", "hidden": false}]
+      },
+      {
+        "name": "Hunting Spear",
+        "id": "7529-6f-e71a-9f5d",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Lethal", "id": "50b-4ca4-e25a-2a87", "hidden": false, "targetId": "b6b9-a2c0-102e-f234", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hunting Spear",
+            "id": "b9f6-e44b-7115-73b3",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Bane Talon",
+        "id": "4203-4c6e-3d75-732d",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Bane Talon",
+            "id": "d8e2-84f4-a258-d2a0",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ],
+        "rules": [{"name": "Bane", "id": "5615-5b69-8bf9-d9cf", "description": "Target saves as if it had QL5+.", "hidden": false}]
+      },
+      {
+        "name": "Impaler",
+        "id": "55c-209a-c53e-6c3c",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "infoLinks": [{"name": "Suppress", "id": "4b4-9ed1-fa2d-cc14", "hidden": false, "targetId": "da8e-136b-fe75-a83b", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Impaler",
+            "id": "c5a6-d025-e069-e0df",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Shardcaster",
+        "id": "6d58-6222-7626-a497",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "profiles": [
+          {
+            "name": "Shardcaster",
+            "id": "d452-4d83-7120-8087",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R3x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Cloak-Shield",
+        "id": "7708-3ce5-6f81-4147",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 2}],
+        "rules": [{"name": "Cloak-Shield", "id": "2567-a49b-360e-36aa", "description": "+1 to all Saves, no matter unit State.", "hidden": false}]
+      },
+      {
+        "name": "Spike",
+        "id": "1e57-754a-edc4-28b",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Spike",
+            "id": "d435-1963-f8ac-26cb",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Kinetic Driver",
+        "id": "ad24-eaa8-6b7e-2d07",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "infoLinks": [{"name": "Force", "id": "32dd-40d1-4b2f-4415", "hidden": false, "targetId": "32b2-18be-7872-5131", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Kinetic Driver",
+            "id": "cdbb-6c80-1e36-8d",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M1x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Wingpack",
+        "id": "9b25-165a-e5bc-a7df",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "rules": [{"name": "Jump", "id": "ad40-efc6-33db-db2a", "description": "Ignore a single obstacle on the unit's first Move of each Turn.", "hidden": false}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Gear",
+        "id": "7197-1b0c-7ffa-4878",
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Death Claws", "id": "426-5324-46cc-e82e", "hidden": false, "import": true, "targetId": "7f1b-befa-58d8-c2fd", "type": "selectionEntry"},
+          {"name": "Dread Glaive", "id": "900e-204-1e40-7c96", "hidden": false, "import": true, "targetId": "3332-d0e7-379d-48e6", "type": "selectionEntry"},
+          {"name": "Cluster Launcher", "id": "6666-c51e-ed02-37dc", "hidden": false, "import": true, "targetId": "847d-2d30-2f0d-3254", "type": "selectionEntry"},
+          {"name": "Shardreaper", "id": "c98f-581-7937-69f2", "hidden": false, "import": true, "targetId": "a4c0-883f-eeb-c164", "type": "selectionEntry"},
+          {"name": "Seeker Cannon", "id": "af7e-3e55-ac40-49b", "hidden": false, "import": true, "targetId": "4d91-c29d-5ec1-458", "type": "selectionEntry"},
+          {"name": "Fusion Gun", "id": "bcf5-514-caea-ecf", "hidden": false, "import": true, "targetId": "f4cb-8b18-1bbb-4ba2", "type": "selectionEntry"},
+          {"name": "Hunting Spear", "id": "4d27-71d8-a670-7171", "hidden": false, "import": true, "targetId": "7529-6f-e71a-9f5d", "type": "selectionEntry"},
+          {"name": "Bane Talon", "id": "13b7-e3ae-11a4-dced", "hidden": false, "import": true, "targetId": "4203-4c6e-3d75-732d", "type": "selectionEntry"},
+          {"name": "Impaler", "id": "38ed-36de-cca9-11", "hidden": false, "import": true, "targetId": "55c-209a-c53e-6c3c", "type": "selectionEntry"},
+          {"name": "Shardcaster", "id": "6ca6-849d-ae8d-1d5", "hidden": false, "import": true, "targetId": "6d58-6222-7626-a497", "type": "selectionEntry"},
+          {"name": "Cloak-Shield", "id": "8372-43c6-52fe-25c4", "hidden": false, "import": true, "targetId": "7708-3ce5-6f81-4147", "type": "selectionEntry"},
+          {"name": "Blade", "id": "27d6-334f-e88d-2d24", "hidden": false, "import": true, "targetId": "2b1-b999-d739-5204", "type": "selectionEntry"},
+          {"name": "Spike", "id": "8a2f-4d4a-7e18-d8ae", "hidden": false, "import": true, "targetId": "1e57-754a-edc4-28b", "type": "selectionEntry"},
+          {"name": "Piercer", "id": "86f4-f12f-b947-d2d6", "hidden": false, "import": true, "targetId": "1211-1401-dc41-a728", "type": "selectionEntry"},
+          {"name": "Pistol", "id": "7fd9-cb89-49a6-b029", "hidden": false, "import": true, "targetId": "4480-dd01-5586-6da7", "type": "selectionEntry"},
+          {"name": "Kinetic Driver", "id": "8ffa-99ba-5339-f7b1", "hidden": false, "import": true, "targetId": "ad24-eaa8-6b7e-2d07", "type": "selectionEntry"},
+          {"name": "Wingpack", "id": "4ba-d8f4-2421-6cbc", "hidden": false, "import": true, "targetId": "9b25-165a-e5bc-a7df", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}
