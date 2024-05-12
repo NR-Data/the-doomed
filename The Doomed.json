@@ -1,0 +1,164 @@
+{
+  "gameSystem": {
+    "name": "The Doomed",
+    "id": "sys-774c-62f8-fa42-34ab",
+    "authorContact": "https://discord.gg/Y5x9UnErYN",
+    "authorName": "@DaeronAlagos",
+    "authorUrl": "https://roster.cards",
+    "battleScribeVersion": 2.03,
+    "revision": 2,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {
+        "name": "Leader",
+        "id": "default-category",
+        "constraints": [
+          {"id": "d4ea-d7a0-b947-5ee5", "field": "selections", "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "67c2-a97-838e-19e2", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ]
+      },
+      {
+        "name": "Follower",
+        "id": "daf9-5bd2-ec45-4b91",
+        "hidden": false,
+        "constraints": [{"id": "68de-8c00-b607-3fe1", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 7}]
+      }
+    ],
+    "costTypes": [{"name": "pts", "id": "f447-42b6-b8e6-3b11", "defaultCostLimit": 20}],
+    "forceEntries": [
+      {
+        "name": "Warband",
+        "id": "default-force",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Leader", "id": "default-force-category-link", "hidden": false, "targetId": "default-category"},
+          {"name": "Follower", "id": "394b-8f0f-ed47-6b03", "hidden": false, "targetId": "daf9-5bd2-ec45-4b91"}
+        ]
+      }
+    ],
+    "profileTypes": [
+      {"name": "Gear", "id": "b448-8404-ef84-ea4d", "hidden": false, "characteristicTypes": [{"name": "Dice", "id": "f98d-b070-aef2-3f55"}]},
+      {"name": "Model", "id": "f77e-6ad7-bf1e-7733", "hidden": false, "characteristicTypes": [{"name": "Quality", "id": "d575-8a65-a82d-6a5f"}]}
+    ],
+    "sharedRules": [
+      {"name": "Precise", "id": "6672-c04b-b4a5-411d", "description": "Reroll when Shooting.", "hidden": false},
+      {"name": "Fierce", "id": "f87a-ab95-7fa5-db49", "description": "Reroll when Fighting.", "hidden": false},
+      {"name": "Nimble", "id": "f6de-6b53-6de0-e4cf", "description": "Reroll when Moving and Saving vs Ranged.", "hidden": false},
+      {"name": "Tough", "id": "2b24-88e0-ae4-1b57", "description": "Reroll when Recovering and Saving vs Melee.", "hidden": false},
+      {"name": "Heavy", "id": "63b-6162-70d1-394c", "description": "x2 Damage if the unit has not Moved this Turn and the unit is Readied.", "hidden": false},
+      {"name": "Storm", "id": "bf6d-af3d-7b05-daac", "description": "x2 Dice if the unit has not Moved this Turn and it is Readied.", "hidden": false},
+      {"name": "Agony", "id": "18df-7449-c20c-2db7", "description": "x2 Damage vs Downed targets.", "hidden": false},
+      {"name": "Force", "id": "32b2-18be-7872-5131", "description": "On a hit, Move the target directly towards or away from the Shooting unit.", "hidden": false},
+      {"name": "Lethal", "id": "b6b9-a2c0-102e-f234", "description": "Shock Rolls of a 7 are treated as a Double.", "hidden": false},
+      {
+        "name": "Concuss",
+        "id": "1553-adbf-94a8-d3e0",
+        "description": "x2 Damage vs Standing targets. The target unit ignores Shock results that would cause it to be Taken out.",
+        "hidden": false
+      },
+      {"name": "Suppress", "id": "da8e-136b-fe75-a83b", "description": "When this unit Wounds a target, the target becomes Exhausted.", "hidden": false},
+      {"name": "Rend", "id": "6235-c6fb-4eeb-7386", "description": "Attack rolls of 6 cause x2 Damage.", "hidden": false},
+      {"name": "Surge", "id": "d743-bdbb-a49e-1247", "description": "x2 Damage but you take the Damage for each 1 rolled to hit.", "hidden": false},
+      {
+        "name": "Sidearm",
+        "id": "7e73-1650-7b5a-626f",
+        "description": "At the end of your Turn you can make a Free Attack with this weapon. A unit may only make one Sidearm attack per Turn.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Cloak",
+        "id": "a65e-4d40-c9a9-fae7",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "rules": [{"name": "Cloak", "id": "3f7b-8c6c-a612-d90e", "description": "+1 to Saves while Exhausted.", "hidden": false}]
+      },
+      {
+        "name": "Piercer",
+        "id": "1211-1401-dc41-a728",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Piercer",
+            "id": "d78e-7d64-727d-f2c2",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R1x2", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Blaster",
+        "id": "2c56-1597-297-7263",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Blaster",
+            "id": "6f09-52ca-c231-5b54",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Shield",
+        "id": "d4ee-9f52-8891-1279",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "rules": [{"name": "Shield", "id": "b7bc-87ef-8e45-d378", "description": "+1 to Saves while the unit is Readied.", "hidden": false}]
+      },
+      {
+        "name": "Blade",
+        "id": "2b1-b999-d739-5204",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "profiles": [
+          {
+            "name": "Blade",
+            "id": "3bb2-2dc6-9149-d316",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "M2x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      },
+      {
+        "name": "Pistol",
+        "id": "4480-dd01-5586-6da7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "f447-42b6-b8e6-3b11", "value": 1}],
+        "infoLinks": [{"name": "Sidearm", "id": "6a07-6485-536d-4ba3", "hidden": false, "targetId": "7e73-1650-7b5a-626f", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Pistol",
+            "id": "59b6-36ec-a8c2-43aa",
+            "hidden": false,
+            "typeId": "b448-8404-ef84-ea4d",
+            "typeName": "Gear",
+            "characteristics": [{"name": "Dice", "$text": "R1x1", "typeId": "f98d-b070-aef2-3f55"}]
+          }
+        ]
+      }
+    ]
+  }
+}
